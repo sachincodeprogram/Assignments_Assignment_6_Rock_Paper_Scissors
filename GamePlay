@@ -122,7 +122,7 @@ class GamePlay extends Component {
       const opponent = choicesList[Math.floor(Math.random() * choicesList.length)]
       const you = choicesList.filter(eachItem => eachItem.id === id)
       const result = this.updateResult(you[0],opponent)
-      let newScore === score
+      let newScore = score
       if (result === 'YOU WON') {
           newScore = score + 1
       } else if (result === 'YOU LOSE') {
